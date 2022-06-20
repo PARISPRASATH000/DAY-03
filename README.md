@@ -5,24 +5,50 @@ ANS:There may be times where you feel you need to make a loop through the array 
 There are a few types of ways to categorize the loops in JavaScript. These are essential to know as they play a significant role in understanding the concept.
 
 QUE 2:Create your own resume data in JSON format
-ANS:{
-    "basics": {
-    "name": "Your first and last name",
-    "label": "",
-    "picture": "",
-    "email": "Your email address",
-    "phone": "A phone number, with any formatting you like. E.g. (555) 555-5555.",
-    "degree": "",
-    "website": "Your website URL",
-    "summary": "A one-sentence to one-paragraph overview text. Do not include any line-breaks.",
-    "location": {
-      "address": "Your street address or mailing address",
-      "postalCode": "Your postal code (ZIP in the U.S.)",
-      "city": "Your city",
-      "countryCode": "Your country (e.g. USA)",
-      "region": "Your region (state in the U.S.)"
-    },
-    
+ANS: let resume= 
+
+    {
+        name:"Prasath S",
+        EmailId: "parisprasath000@gmail.com",
+        Mobile : 8122693099,
+         educationalqualification:{
+            BachelorOfCommerce :"B.com 65%",
+           
+         },
+        
+         PERSONALTRAITS : 
+          {   
+            a :'Self Motivated and Self Learner',
+            b :'Effective Time Management and Punctual',
+            c :'Flexible Person',
+               },
+         personalinfo:{
+            personaladdress:{
+                       street:"18th subramanian street",
+                        doorn:'326/1-a 1st floor', 
+                         area:'g k m colony', 
+                         city:'chennai' , 
+                     district:'chennai',
+                     Pincode :600082
+                    },
+                         Dob : "27/04/1997",
+                 FathersName : 'Mr.N.Saravanan',
+                      Gender : 'Male',
+                 Nationality : 'Indian',
+          LinguisticAbility :'Tamil  English Telugu ',   
+                     Hobbies : 'riding travelling and Listening Music',
+
+         }
+         }
+                                       
+{
+    let resumeJSON = JSON.stringify(resume);// object to JSON CONVERSION 
+    console.log(resumeJSON);
+
+//let resumeobj  =JSON.parse(resumeJSON);
+//console.log(resumeobj);
+ 
+};
     QUE 3:Read about the difference between window, screen and document in javascript
     ANS:window is the execution context and global object for that context's JavaScript,
         document contains the DOM, initialized by parsing HTML,
